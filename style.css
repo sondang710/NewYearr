@@ -1,0 +1,240 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.start-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    font-family: "Satisfy", serif;
+
+    .start-wrapper {
+        width: 80%;
+        height: 80%;
+        background-color: bisque;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    h1 {
+    transform: translate(0, -100px);
+    font-size: 60px;
+    color: #333;
+    
+}
+
+    .btn-yes {
+        font-size: 25px;
+        width: 400px;
+        height: 80px;
+        background-color: rgba(255, 85, 0, 0.541);
+        color: #fff;
+        font-family: "Satisfy", serif;
+        border: none;
+        border-radius: 10px;
+        
+    }
+    .btn-yes:hover {
+        background-color: rgba(255, 85, 0, 0.745);
+    }
+
+    .btn-no {
+        font-size: 25px;
+        width: 400px;
+        height: 80px;
+        background-color: rgba(255, 85, 0, 0.541);
+        color: #fff;
+        font-family: "Satisfy", serif;
+        border: none;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    .btn-no:hover {
+        background-color: rgba(255, 85, 0, 0.745);
+    }
+
+}
+.wrapper {
+    display: flex;
+    position: relative;
+    background-color: #4d4848;
+    width: 100%;
+    .left-line {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        width: 5px;
+        height: 500px;
+        background-color: #333;
+        cursor: pointer;
+    }
+
+    .left-handle {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer;
+        left: 8.3%;
+        top: 230px;
+    }
+    .right-line {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translate(-50%, -50%);
+        width: 5px;
+        height: 500px;
+        background-color: #333;
+        cursor: pointer;
+    }
+
+    .right-handle {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        border-radius: 50%;
+        cursor: pointer;
+        right: 8.7%;
+        top: 230px;
+    }
+
+    .main-text {
+        visibility: visible;
+        width: 50%;
+        height: 40vh;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        transform: translate(50%, 75%);
+        border: 2px solid #ccc;
+    }
+
+    
+}
+
+
+.love-sending{
+        font-family: "Merienda", serif;
+        width: 60%;
+        height: 200px;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        transform: translate(30%, -180%);
+        visibility: hidden;
+        transition: visibility 5s, opacity 5s ease;
+        opacity: 0;
+        
+
+        img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            border-radius: 10px;
+        }
+        h1 {
+            position: relative;
+            font-size: 40px;
+            color: #333;
+            z-index: 999;
+            text-align: center;
+            transform: translateY(-100%);
+        }
+
+        p {
+            position: relative;
+            text-indent: 50px;
+            line-height: 40px;
+            font-size: 20px;
+            z-index: 999;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        h3 {
+            font-size: 13px;
+            position: absolute;
+            z-index: 999;
+            right: 1%;
+            bottom: -75%;
+        }
+    }
+
+    .love-sending.active {
+        transform: translate(30%, 150%); /* Vị trí cuối cùng khi hiển thị */
+        visibility: visible; /* Hiển thị phần tử */
+        transition: opacity 2s, transform 2s linear; /* Chỉ hiệu ứng di chuyển */
+        opacity: 1;
+    }
+
+    .future-sending{
+        font-family: "Merienda", serif;
+        width: 60%;
+        height: 200px;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        transform: translate(30%, -180%);
+        visibility: hidden;
+        transition: visibility 5s, opacity 5s ease;
+        opacity: 0;
+        
+
+        img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            border-radius: 10px;
+        }
+        h1 {
+            position: relative;
+            font-size: 40px;
+            color: #333;
+            z-index: 999;
+            text-align: center;
+            transform: translateY(-100%);
+        }
+
+        p {
+            position: relative;
+            text-indent: 50px;
+            line-height: 40px;
+            font-size: 20px;
+            z-index: 999;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        h3 {
+            font-size: 13px;
+            position: absolute;
+            z-index: 999;
+            right: 1%;
+            bottom: -75%;
+        }
+    }
+    .future-sending.active {
+        transform: translate(30%, 150%); /* Vị trí cuối cùng khi hiển thị */
+        visibility: visible; /* Hiển thị phần tử */
+        transition: opacity 2s, transform 2s linear; /* Chỉ hiệu ứng di chuyển */
+        opacity: 1;
+    }
